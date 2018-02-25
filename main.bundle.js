@@ -290,7 +290,7 @@ var CompanyService = (function () {
         this.http = http;
     }
     CompanyService.prototype.getData = function () {
-        return this.http.get("../assets/data.json")
+        return this.http.get("../company-app-live/assets/data.json")
             .map(function (res) { return res.json(); });
     };
     return CompanyService;
